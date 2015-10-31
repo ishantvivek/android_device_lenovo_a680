@@ -94,10 +94,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 #product property of a680
 PRODUCT_PROPERTY_OVERRIDES := \
-ro.mediatek.version.release=ALPS.JB5.MP.V1.5 \
+          ro.mediatek.version.release=ALPS.JB5.MP.V1.5 \
 	ro.mediatek.platform=MT6582 \
 	ro.mediatek.chip_ver=S01 \
-ro.mediatek.version.branch=ALPS.JB5.MP \
+        ro.mediatek.version.branch=ALPS.JB5.MP \
 	ro.mediatek.version.sdk=1 \
 	ro.telephony.sim.count=2 \
 	ro.allow.mock.location=0 \
@@ -105,10 +105,10 @@ ro.mediatek.version.branch=ALPS.JB5.MP \
 	persist.sys.usb.config=mtp,adb \
 	persist.service.adb.enable=1 \
 	persist.service.debuggable=1 \
-	persist.mtk.wcn.combo.chipid=-1
-  dalvik.vm.heapstartsize=8m
-  dalvik.vm.heapgrowthlimit=64m
-  dalvik.vm.heapsize=256m
+	persist.mtk.wcn.combo.chipid=-1 \
+        dalvik.vm.heapstartsize=8m \
+        dalvik.vm.heapgrowthlimit=64m \
+        dalvik.vm.heapsize=256m
 PRODUCT_NAME := full_a680
 PRODUCT_DEVICE := a680
 
