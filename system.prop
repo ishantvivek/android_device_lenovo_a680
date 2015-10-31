@@ -11,10 +11,7 @@ persist.radio.fd.r8.counter=15
 persist.radio.fd.off.r8.counter=5
 fmradio.driver.enable=1
 ril.radiooff.poweroffMD=0
-persist.multisim.config=dsds
-persist.radio.multisim.config=dsds
-persist.dsds.enabled=true
-ro.dual.sim.phone=true
+persist.multisim.config=none
 mux.debuglog.enable=1
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
@@ -28,7 +25,7 @@ ro.telephony.default_network=9,9
 ril.radiooff.poweroffMD=0
 ril.active.md=0
 
-ro.telephony.ril_class=MediaTekRIL
+#ro.telephony.ril_class=MediaTekRIL
 
 ro.nfc.port=I2C
 mtknfc.status.type=unknow
