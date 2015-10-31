@@ -1,5 +1,5 @@
 # mount point        fstype      device                   device2
-/misc                emmc      /dev/misc
+/misc                emmc        /dev/misc
 /boot                emmc        /dev/bootimg
 /recovery            emmc        /dev/recovery
 /cache               ext4        /dev/block/mmcblk0p6
