@@ -113,7 +113,7 @@ PRODUCT_NAME := full_a680
 PRODUCT_DEVICE := a680
 
 # Use the Dalvik VM specific for devices with 1024 MB of RAM
-include frameworks/native/build/phone-hdpi-1024-dalvik-heap.mk
+include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
