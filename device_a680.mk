@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-    device/lenovo/a680/configs/android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
+        device/lenovo/a680/configs/android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
 	device/lenovo/a680/configs/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
