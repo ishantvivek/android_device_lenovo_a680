@@ -103,7 +103,7 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 
 # Skip droiddoc build to save build time
-BOARD_SKIP_ANDROID_DOC_BUILD := true
+#BOARD_SKIP_ANDROID_DOC_BUILD := true
 
 
 # MTK hacks for hw
