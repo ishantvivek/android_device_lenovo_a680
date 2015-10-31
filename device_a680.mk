@@ -94,7 +94,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 #product property of a680
 PRODUCT_PROPERTY_OVERRIDES := \
-          ro.mediatek.version.release=ALPS.JB5.MP.V1.5 \
+        ro.mediatek.version.release=ALPS.JB5.MP.V1.5 \
 	ro.mediatek.platform=MT6582 \
 	ro.mediatek.chip_ver=S01 \
         ro.mediatek.version.branch=ALPS.JB5.MP \
