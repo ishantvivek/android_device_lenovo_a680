@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
     $(LOCAL_PATH)/rootdir/init.protect.rc:root/init.protect.rc \
-   $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc 
+    $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc 
 
 # Recovery
 PRODUCT_COPY_FILES += \
