@@ -22,12 +22,17 @@ LOCAL_PATH := device/lenovo/a680
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/recovery/fstab:root/fstab \
+
+$(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
+
+$(LOCAL_PATH)/recovery/fstab:root/fstab \
     $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
     $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/init.protect.rc:root/init.protect.rc
+    $(LOCAL_PATH)/rootdir/init.protect.rc:root/init.protect.rc \
+
+$(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc 
 
 # Recovery
 PRODUCT_COPY_FILES += \
@@ -105,10 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.sys.usb.config=mtp,adb \
 	persist.service.adb.enable=1 \
 	persist.service.debuggable=1 \
-	persist.mtk.wcn.combo.chipid=-1 \
-        dalvik.vm.heapstartsize=8m \
-        dalvik.vm.heapgrowthlimit=64m \
-        dalvik.vm.heapsize=256m
+	persist.mtk.wcn.combo.chipid=-1 
 PRODUCT_NAME := full_a680
 PRODUCT_DEVICE := a680
 
