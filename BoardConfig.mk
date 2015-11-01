@@ -31,7 +31,8 @@ TARGET_RECOVERY_FSTAB := device/lenovo/a680/recovery/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 I_AM_KOUSH := true
 #TARGET_RECOVERY_INITRC := device/lenovo/a680/recovery/init.rc
-
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
+BOARD_USE_BGRA_8888 := true
 #Assert
 TARGET_OTA_ASSERT_DEVICE := A680,huaqin82_wet_e_jb5
 
