@@ -22,8 +22,7 @@ LOCAL_PATH := device/lenovo/a680
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-
-$(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
+    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
 
 $(LOCAL_PATH)/recovery/fstab:root/fstab \
     $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
