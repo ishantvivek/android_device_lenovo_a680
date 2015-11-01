@@ -29,7 +29,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lenovo/a680/recovery/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
-LOCAL_CFLAGS += -DI_AM_KOUSH
+I_AM_KOUSH := true
 #TARGET_RECOVERY_INITRC := device/lenovo/a680/recovery/init.rc
 
 #Assert
