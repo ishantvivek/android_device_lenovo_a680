@@ -4,8 +4,7 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Release name
 PRODUCT_RELEASE_NAME := CM-A680
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/a680/device_a680.mk)
