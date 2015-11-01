@@ -22,7 +22,7 @@ LOCAL_PATH := device/lenovo/a680
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc.  
+    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \  
     $(LOCAL_PATH)/recovery/fstab:root/fstab \
     $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
@@ -101,7 +101,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	ro.mediatek.chip_ver=S01 \
         ro.mediatek.version.branch=ALPS.JB5.MP \
 	ro.mediatek.version.sdk=1 \
-	ro.telephony.sim.count=2 \
+	ro.telephony.sim.count=1 \
 	ro.allow.mock.location=0 \
 	ro.debuggable=1 \
 	persist.sys.usb.config=mtp,adb \
