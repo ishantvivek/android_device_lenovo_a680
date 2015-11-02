@@ -30,9 +30,14 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_RECOVERY_FSTAB := device/lenovo/a680/recovery/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 I_AM_KOUSH := true
-#TARGET_RECOVERY_INITRC := device/lenovo/a680/recovery/init.rc
+#Recovery-MTK Flags 
+# Clone modified source of recovery to work with mtk 
+BOARD_USE_MTK_LAYOUT := true
+BOARD_MTK_BOOT_LABEL := "/bootimg"
+#BOARD_USE_NTFS_3G := false
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 BOARD_USE_BGRA_8888 := true
+
 #Assert
 TARGET_OTA_ASSERT_DEVICE := A680,huaqin82_wet_e_jb5
 
