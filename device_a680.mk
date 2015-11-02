@@ -108,8 +108,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.service.adb.enable=1 \
 	persist.service.debuggable=1 \
 	persist.mtk.wcn.combo.chipid=-1 
-PRODUCT_NAME := full_a680
-PRODUCT_DEVICE := a680
 
 # Use the Dalvik VM specific for devices with 1024 MB of RAM
 include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
