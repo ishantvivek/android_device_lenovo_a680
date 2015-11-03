@@ -31,6 +31,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_RECOVERY_FSTAB := device/lenovo/a680/recovery/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
 I_AM_KOUSH := true
+
 #Recovery-MTK Flags 
 # Clone modified source of recovery to work with mtk 
 
@@ -52,6 +53,9 @@ TARGET_OTA_ASSERT_DEVICE := A680,huaqin82_wet_e_jb5
 # EGL settings
 BOARD_EGL_CFG := device/lenovo/a680/egl/egl.cfg
 USE_OPENGL_RENDERER := true
+
+# telephony
+#BOARD_RIL_CLASS := ../../../device/lenovo/a680/ril/
 
 
 # Deodex
