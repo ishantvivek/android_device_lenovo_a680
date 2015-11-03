@@ -10,10 +10,9 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
 DEVICE_RESOLUTION := 480x854
 TARGET_NO_BOOTLOADER := true
-CM_EXPERIMENTAL := true
-CM_BUILDTYPE := EXPERIMENTAL
+
 # Kernel
-BOARD_KERNEL_CMDLINE := 
+BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := device/lenovo/a680/kernel/kernel
@@ -30,10 +29,9 @@ TARGET_USERIMAGES_USE_EXT4:=true
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lenovo/a680/recovery/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
-I_AM_KOUSH := true
 
-#Recovery-MTK Flags 
-# Clone modified source of recovery to work with mtk 
+#Recovery-MTK Flags
+# Clone modified source of recovery to work with mtk
 
 CWM_EMMC_BOOT_DEVICE_NAME := /dev/bootimg
 CWM_EMMC_BOOT_DEVICE_SIZE := 0x600000
