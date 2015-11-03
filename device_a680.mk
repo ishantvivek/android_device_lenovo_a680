@@ -22,14 +22,14 @@ LOCAL_PATH := device/lenovo/a680
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \  
+    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
     $(LOCAL_PATH)/recovery/fstab:root/fstab \
     $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
     $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
     $(LOCAL_PATH)/rootdir/init.protect.rc:root/init.protect.rc \
-    $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc 
+    $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc
 
 # Recovery
 PRODUCT_COPY_FILES += \
@@ -51,7 +51,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf 
+    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 
 # These are the hardware-specific features
@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
 	frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml 
+	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml
 
 
 
@@ -107,10 +107,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.sys.usb.config=mtp,adb \
 	persist.service.adb.enable=1 \
 	persist.service.debuggable=1 \
-	persist.mtk.wcn.combo.chipid=-1 
+	persist.mtk.wcn.combo.chipid=-1
 
 # Use the Dalvik VM specific for devices with 1024 MB of RAM
-include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
+-include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
