@@ -29,6 +29,8 @@ TARGET_USERIMAGES_USE_EXT4:=true
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lenovo/a680/recovery/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
+BOARD_USE_BGRA_8888 := true
 
 #Recovery-MTK Flags
 # Clone modified source of recovery to work with mtk
