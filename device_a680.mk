@@ -7,6 +7,27 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 # Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/lenovo/a680/a680-vendor.mk)
 
+# prebuilt kernel modules
+MOD_TGT := /system/lib/modules
+MOD_SRC := /home/aman/Android/cm10.1/device/lenovo/a680/kernel/modules
+PRODUCT_COPY_FILES += \
+	$(MOD_SRC)/ccci.ko:$(MOD_TGT)/ccci.ko \
+	$(MOD_SRC)/ccci_plat.ko:$(MOD_TGT)/ccci_plat.ko \
+	$(MOD_SRC)/devapc.ko:$(MOD_TGT)/devapc.ko \
+	$(MOD_SRC)/devinfo.ko:$(MOD_TGT)/devinfo.ko \
+	$(MOD_SRC)/mtk_fm_drv.ko:$(MOD_TGT)/mtk_fm_drv.ko \
+	$(MOD_SRC)/mali.ko:$(MOD_TGT)/mali.ko \
+	$(MOD_SRC)/mtk_stp_bt.ko:$(MOD_TGT)/mtk_stp_bt.ko \
+	$(MOD_SRC)/mtk_stp_gps.ko:$(MOD_TGT)/mtk_stp_gps.ko \
+	$(MOD_SRC)/mtk_stp_wmt.ko:$(MOD_TGT)/mtk_stp_wmt.ko \
+	$(MOD_SRC)/mtk_wmt_wifi.ko:$(MOD_TGT)/mtk_wmt_wifi.ko \
+	$(MOD_SRC)/hid-logitech.ko:$(MOD_TGT)/hid-logitech.ko \
+	$(MOD_SRC)/scsi_tgt.ko:$(MOD_TGT)/scsi_tgt.ko \
+	$(MOD_SRC)/scsi_wait_scan.ko:$(MOD_TGT)/scsi_wait_scan.ko \
+	$(MOD_SRC)/sec.ko:$(MOD_TGT)/sec.ko \
+	$(MOD_SRC)/vcodec_kernel_driver.ko:$(MOD_TGT)/vcodec_kernel_driver.ko \
+	$(MOD_SRC)/wlan_mt.ko:$(MOD_TGT)/wlan_mt.ko
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/lenovo/a680/overlay
 
@@ -22,7 +43,6 @@ LOCAL_PATH := device/lenovo/a680
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
     $(LOCAL_PATH)/recovery/fstab:root/fstab \
     $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \

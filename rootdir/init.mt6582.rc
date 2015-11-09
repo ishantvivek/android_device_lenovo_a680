@@ -10,12 +10,6 @@ import init.protect.rc
 import init.project.rc
 
 
-
-on early_property:ro.hardware=mt6582
-    setprop ro.mtk.hardware mt6582
-
-
-
 # Change ION driver permission
     chmod 0644 /dev/ion
 
