@@ -9,7 +9,7 @@ $(call inherit-product-if-exists, vendor/lenovo/a680/a680-vendor.mk)
 
 # prebuilt kernel modules
 MOD_TGT := /system/lib/modules
-MOD_SRC := $(LOCAL_PATH)/prebuilt/modules
+MOD_SRC := /home/aman/Android/cm10.1/device/lenovo/a680/kernel/modules
 PRODUCT_COPY_FILES += \
 	$(MOD_SRC)/ccci.ko:$(MOD_TGT)/ccci.ko \
 	$(MOD_SRC)/ccci_plat.ko:$(MOD_TGT)/ccci_plat.ko \
