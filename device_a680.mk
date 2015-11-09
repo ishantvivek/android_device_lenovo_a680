@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
 	$(MOD_SRC)/mali.ko:$(MOD_TGT)/mali.ko \
 	$(MOD_SRC)/mtk_stp_bt.ko:$(MOD_TGT)/mtk_stp_bt.ko \
 	$(MOD_SRC)/mtk_stp_gps.ko:$(MOD_TGT)/mtk_stp_gps.ko \
-	$(MOD_SRC)/mtk_stp_uart.ko:$(MOD_TGT)/mtk_stp_uart.ko \
 	$(MOD_SRC)/mtk_stp_wmt.ko:$(MOD_TGT)/mtk_stp_wmt.ko \
 	$(MOD_SRC)/mtk_wmt_wifi.ko:$(MOD_TGT)/mtk_wmt_wifi.ko \
 	$(MOD_SRC)/hid-logitech.ko:$(MOD_TGT)/hid-logitech.ko \
